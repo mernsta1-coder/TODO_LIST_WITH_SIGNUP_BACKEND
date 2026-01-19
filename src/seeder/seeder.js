@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import User from "../models/user.js";
 import bcrypt from 'bcrypt'
 import dotenv from 'dotenv'
- const result = dotenv.config({path:'../.env'});
+ const result = dotenv.config({path:'../../.env'});
  console.log("result is ",result)
 
 mongoose.connect(process.env.MONGO_URL)
@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URL)
 const adminUsers = {
     name: "Super Admin",
   email: "admin@gmail.com",
-  password: "admin123", // change here
+  password: "Admin123", // change here
   role: "admin",
 }
 
