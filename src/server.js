@@ -28,9 +28,10 @@ const app = express();
 /* ------------------ MIDDLEWARES ------------------ */
 app.use(cors({
   origin: [
-    "http://localhost:5173",                     // Local frontend
-    "https://to-do-list-tau-brown.vercel.app"  // Deployed frontend
+    "http://localhost:5173", // local dev
+    "https://to-do-list-git-main-yugam-guptas-projects.vercel.app" // deployed frontend
   ],
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
   credentials: true
 }));
 
